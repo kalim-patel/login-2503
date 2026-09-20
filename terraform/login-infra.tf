@@ -309,7 +309,7 @@ resource "aws_vpc_security_group_egress_rule" "login-db-sg-outbound" {
 resource "aws_instance" "login-web-server" {
   ami           = "ami-0c3b809fcf2445b6a"
   instance_type = "t2.micro"
-  key_name      = "2501"
+  key_name      = "aws2603"
   subnet_id     = aws_subnet.login-web-sn.id
   vpc_security_group_ids = [aws_security_group.login-web-sg.id]
   user_data     = file("script.sh")
