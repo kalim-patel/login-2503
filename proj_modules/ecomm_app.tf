@@ -8,9 +8,9 @@ module "ecomm_vpc" {
 
 module "ecomm_ec2" {
     source = "./modules/ec2"
-    ami    = "ami-0c3b809fcf2445b6a"
-    instance_type = "t2.micro"
-    key_name      = "2501"
+    ami    = "ami-0aba19e56f3eaec05"
+    instance_type = "t3.micro"
+    key_name      = "aws2603"
     subnet_id     = module.ecomm_vpc.public_subnet_id
     vpc_security_group_ids = [module.ecomm_vpc.web_sg_id]
     user_data     = file("ecomm-script.sh")
