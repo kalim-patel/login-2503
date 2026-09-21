@@ -2,7 +2,7 @@ module "ecomm_vpc" {
     source = "./modules/vpc"
     vpc_cidr = "192.168.0.0/16"
     public_subnet_cidr = "192.168.0.0/24"
-    availability_zone = "us-east-2b"
+    availability_zone = "eu-north-1a"
     vpc_name          = "ecomm"
 }
 
