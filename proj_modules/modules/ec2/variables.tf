@@ -5,7 +5,7 @@ variable "ami" {
 
 variable "instance_type" {
   description = "Instance Type For EC2 Instance"
-  default     = "t2.micro"
+  default     = "t3.micro"
 }
 
 variable "subnet_id" {
