@@ -10,5 +10,5 @@ sudo apt install -y nginx
 echo "Remove Sample Pages"
 sudo rm -r /var/www/html/
 echo "Clone Ecomm App"
-sudo git clone https://github.com/ravi2krishna/ecomm.git /var/www/html
+sudo git clone https://github.com/kalim-patel/ecomm.git /var/www/html
 echo "Web App Deployment Completed"
